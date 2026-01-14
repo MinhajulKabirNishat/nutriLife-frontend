@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NutriLife</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Logo -->
+                <div class="sidebar-logo">
+                    <div class="logo-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C12 2 6 5 6 8C6 9.657 7.343 11 9 11C10.296 11 11.516 10.684 12.536 10.182L12 16L13.536 10.182C14.556 10.684 15.776 11 17.072 11C18.729 11 20.072 9.657 20.072 8C20.072 5 14.072 2 12 2Z" fill="white"/>
+                            <path d="M12 3C12 3 8 5.25 8 7.5C8 8.75 9 9.75 10.25 9.75C11 9.75 11.75 9.5 12.25 9.25L12 12.5L13.25 9.25C13.75 9.5 14.5 9.75 15.25 9.75C16.5 9.75 17.5 8.75 17.5 7.5C17.5 5.25 13.5 3 12 3Z" fill="#D1FAE5"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">NutriLife</span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="nav-item active">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H8V8H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 3H17V8H12V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 12H8V17H3V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12H17V17H12V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="diet-plan.html" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 10L10 3L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 3V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>My Diet Plan</span>
+                    </a>
+                    <a href="appointments.html" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 8H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Appointments</span>
+                    </a>
+                    <a href="leaderboard.html" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.5 7.5L18.5 8.5L14 12.5L15 18.5L10 15.5L5 18.5L6 12.5L1.5 8.5L7.5 7.5L10 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Leaderboard</span>
+                    </a>
+                    <a href="dietician.html" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="6" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M5 17C5 13 7 11 10 11C13 11 15 13 15 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Assigned Dietician</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 15L7 11L11 15L17 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 9V13H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Progress</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 1V3M10 17V19M19 10H17M3 10H1M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                </nav>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h3 class="quick-actions-title">QUICK ACTIONS</h3>
+                    <button class="quick-action-btn quick-action-green">
+                        <div class="quick-action-content">
+                            <span class="quick-action-label">Track Your Meals</span>
+                            <span class="quick-action-subtitle">Log your food intake</span>
+                        </div>
+                    </button>
+                    <button class="quick-action-btn quick-action-blue">
+                        <div class="quick-action-content">
+                            <span class="quick-action-label">Get Recommendations</span>
+                            <span class="quick-action-subtitle">AI-powered diet plan</span>
+                        </div>
+                    </button>
+                    <a href="index.html" class="logout-link">
+                        <span>Logout</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1 class="welcome-title">Welcome back, Demo User! 👋</h1>
+                <p class="welcome-subtitle">Let's check your nutrition progress today</p>
+            </div>
+
+            <!-- Key Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card metric-card-primary">
+                    <div class="metric-content">
+                        <h3 class="metric-label">Daily Calorie Target</h3>
+                        <div class="metric-value-large">2,200</div>
+                        <div class="metric-value-small">1,450 consumed</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 66%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+                            <path d="M24 4C24 4 16 12 16 20C16 24 20 28 24 28C28 28 32 24 32 20C32 12 24 4 24 4Z" fill="white" fill-opacity="0.8"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-content">
+                        <h3 class="metric-label">Calories Burned</h3>
+                        <div class="metric-value">850</div>
+                        <div class="metric-change positive">+12% from yesterday</div>
+                    </div>
+                    <div class="metric-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8L24 16L32 18L26 24L27 32L20 28L13 32L14 24L8 18L16 16L20 8Z" fill="#F97316"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-content">
+                        <h3 class="metric-label">Current Weight</h3>
+                        <div class="metric-value">68 kg</div>
+                        <div class="metric-change positive">-2 kg this month</div>
+                    </div>
+                    <div class="metric-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 30L14 22L22 30L34 18" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 18H28V12" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Recommended Meals -->
+                <div class="content-card">
+                    <div class="content-card-header">
+                        <div class="content-card-title">
+                            <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C12 2 6 5 6 8C6 9.657 7.343 11 9 11C10.296 11 11.516 10.684 12.536 10.182L12 16L13.536 10.182C14.556 10.684 15.776 11 17.072 11C18.729 11 20.072 9.657 20.072 8C20.072 5 14.072 2 12 2Z" fill="#22C55E"/>
+                            </svg>
+                            <h2>Recommended Meals Today</h2>
+                        </div>
+                    </div>
+                    <div class="meals-list">
+                        <div class="meal-item">
+                            <div class="meal-info">
+                                <h4 class="meal-name">Berry Protein Smoothie</h4>
+                                <p class="meal-details">Breakfast • 320 cal</p>
+                            </div>
+                            <button class="meal-view-btn">View</button>
+                        </div>
+                        <div class="meal-item">
+                            <div class="meal-info">
+                                <h4 class="meal-name">Mediterranean Quinoa Bowl</h4>
+                                <p class="meal-details">Lunch • 450 cal</p>
+                            </div>
+                            <button class="meal-view-btn">View</button>
+                        </div>
+                        <div class="meal-item">
+                            <div class="meal-info">
+                                <h4 class="meal-name">Grilled Salmon & Veggies</h4>
+                                <p class="meal-details">Dinner • 520 cal</p>
+                            </div>
+                            <button class="meal-view-btn">View</button>
+                        </div>
+                    </div>
+                    <a href="diet-plan.html" class="full-plan-btn">View Full Diet Plan</a>
+                </div>
+
+                <!-- Today's Schedule -->
+                <div class="content-card">
+                    <div class="content-card-header">
+                        <div class="content-card-title">
+                            <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <h2>Today's Schedule</h2>
+                        </div>
+                    </div>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div class="schedule-time">08:00 AM</div>
+                            <div class="schedule-details">
+                                <div class="schedule-meal">Breakfast</div>
+                                <div class="schedule-description">Oatmeal with berries, Greek yogurt</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">01:00 PM</div>
+                            <div class="schedule-details">
+                                <div class="schedule-meal">Lunch</div>
+                                <div class="schedule-description">Grilled chicken salad, quinoa</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">04:00 PM</div>
+                            <div class="schedule-details">
+                                <div class="schedule-meal">Snack</div>
+                                <div class="schedule-description">Apple slices with almond butter</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">07:00 PM</div>
+                            <div class="schedule-details">
+                                <div class="schedule-meal">Dinner</div>
+                                <div class="schedule-description">Baked salmon, steamed vegetables</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA Sections -->
+            <div class="cta-grid">
+                <div class="cta-card cta-green">
+                    <div class="cta-content">
+                        <h3 class="cta-title">Track Your Meals</h3>
+                        <p class="cta-description">Log your food intake and monitor daily calories</p>
+                    </div>
+                    <button class="cta-button">Track Food</button>
+                </div>
+                <div class="cta-card cta-blue">
+                    <div class="cta-content">
+                        <h3 class="cta-title">Get Recommendations</h3>
+                        <p class="cta-description">Personalized AI-powered diet suggestions</p>
+                    </div>
+                    <button class="cta-button">Get Plan</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,510 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #22C55E;
+    --dark-green: #16A34A;
+    --text-dark: #1F2937;
+    --text-gray: #4B5563;
+    --text-light: #6B7280;
+    --border-gray: #E5E7EB;
+    --bg-white: #FFFFFF;
+    --bg-light: #F0FDF4;
+    --orange: #F97316;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    min-height: 100vh;
+}
+
+.appointments-container {
+    padding: 32px 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 32px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--dark-green);
+}
+
+.header-content {
+    margin-top: 8px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: var(--text-gray);
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Left Column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    flex-shrink: 0;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Appointment Cards */
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.appointment-card {
+    padding: 20px;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+}
+
+.appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.dietitian-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.status-confirmed {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.status-pending {
+    background-color: #FED7AA;
+    color: var(--orange);
+}
+
+.appointment-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+/* Quick Filters */
+.filters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.filter-btn {
+    padding: 12px 16px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-green);
+    background-color: var(--bg-light);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green);
+}
+
+/* Right Column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    gap: 12px;
+}
+
+.search-bar {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    color: var(--text-light);
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px 12px 44px;
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: var(--bg-white);
+    transition: all 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+}
+
+.btn-search {
+    white-space: nowrap;
+}
+
+.btn-join {
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+/* Dietitians Section */
+.dietitians-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.dietitians-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dietitian-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dietitian-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dietitian-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.dietitian-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.dietitian-info {
+    flex: 1;
+}
+
+.dietitian-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.dietitian-specialty {
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.price-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+.dietitian-details {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.dietitian-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tag-green {
+    background-color: var(--bg-light);
+    color: var(--dark-green);
+    border: 1px solid var(--primary-green);
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.availability-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.availability-days {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.day-tag {
+    padding: 4px 10px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-gray);
+    border-radius: 12px;
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.btn-slots {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .content-grid {
+        grid-template-columns: 350px 1fr;
+    }
+}
+
+@media (max-width: 968px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column {
+        order: 2;
+    }
+
+    .right-column {
+        order: 1;
+    }
+
+    .filters-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .appointments-container {
+        padding: 20px 0;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .dietitian-header {
+        flex-wrap: wrap;
+    }
+
+    .price-tag {
+        position: static;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .dietitian-details {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .dietitian-card {
+        padding: 20px;
+    }
+
+    .dietitian-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}

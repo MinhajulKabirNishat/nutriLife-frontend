@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Diet Plan - NutriLife</title>
+    <link rel="stylesheet" href="diet-plan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="diet-plan-container">
+        <!-- Top Section -->
+        <div class="top-section">
+            <div class="container">
+                <a href="dashboard.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Back to Dashboard</span>
+                </a>
+                
+                <div class="header-content">
+                    <div class="title-section">
+                        <h1 class="page-title">Your Personalized Diet Plan</h1>
+                        <p class="page-subtitle">Weekly meal schedule tailored to your goals</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-download">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2V12M10 12L6 8M10 12L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 14V16C2 17.105 2.895 18 4 18H16C17.105 18 18 17.105 18 16V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Download PDF
+                        </button>
+                        <button class="btn btn-regenerate">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 10C17 13.866 13.866 17 10 17C6.134 17 3 13.866 3 10C3 6.134 6.134 3 10 3C12.209 3 14.209 4.209 15.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M17 2V6H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Regenerate Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Diet Overview -->
+        <div class="container">
+            <div class="overview-card">
+                <h2 class="section-title">Weekly Diet Overview</h2>
+                <div class="table-wrapper">
+                    <table class="diet-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Breakfast</th>
+                                <th>Lunch</th>
+                                <th>Dinner</th>
+                                <th>Snacks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="day-cell">Monday</td>
+                                <td>Oatmeal Bowl</td>
+                                <td>Grilled Chicken Salad</td>
+                                <td>Baked Fish</td>
+                                <td>Almonds (30g)</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Tuesday</td>
+                                <td>Protein Smoothie</td>
+                                <td>Quinoa Bowl</td>
+                                <td>Lean Steak</td>
+                                <td>Apple + Peanut Butter</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Wednesday</td>
+                                <td>Egg White Omelet</td>
+                                <td>Salmon & Veggies</td>
+                                <td>Tofu Stir-fry</td>
+                                <td>Protein Bar</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Thursday</td>
+                                <td>Greek Yogurt Parfait</td>
+                                <td>Turkey Wrap</td>
+                                <td>Grilled Prawns</td>
+                                <td>Veggie Sticks</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Friday</td>
+                                <td>Avocado Toast</td>
+                                <td>Lentil Soup</td>
+                                <td>Chicken Breast</td>
+                                <td>Cottage Cheese</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Saturday</td>
+                                <td>Fruit Salad</td>
+                                <td>Buddha Bowl</td>
+                                <td>Vegetable Curry</td>
+                                <td>Mixed Berries</td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Sunday</td>
+                                <td>Pancakes</td>
+                                <td>Chicken Pasta</td>
+                                <td>Beef Tacos</td>
+                                <td>Rice Cakes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Detailed Meal Cards -->
+            <div class="meals-section">
+                <!-- Breakfast Section -->
+                <div class="meal-type-section">
+                    <h2 class="meal-type-title">
+                        <svg class="meal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="#22C55E" stroke-width="2"/>
+                            <path d="M12 2V6M12 18V22M22 12H18M6 12H2" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Breakfast
+                    </h2>
+                    <div class="meal-cards-grid">
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Berry Protein Oatmeal</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Oats</li>
+                                        <li>Protein powder</li>
+                                        <li>Mixed berries</li>
+                                        <li>Honey</li>
+                                        <li>Almond milk</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">420 cal</span>
+                                        <span class="nutrition-item">P: 28g</span>
+                                        <span class="nutrition-item">C: 52g</span>
+                                        <span class="nutrition-item">F: 10g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Scrambled Eggs with Avocado Toast</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Egg whites</li>
+                                        <li>Whole egg</li>
+                                        <li>Whole grain bread</li>
+                                        <li>Avocado</li>
+                                        <li>Cherry tomatoes</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">380 cal</span>
+                                        <span class="nutrition-item">P: 24g</span>
+                                        <span class="nutrition-item">C: 35g</span>
+                                        <span class="nutrition-item">F: 15g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch Section -->
+                <div class="meal-type-section">
+                    <h2 class="meal-type-title">
+                        <svg class="meal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="#22C55E" stroke-width="2"/>
+                            <path d="M12 2V6M12 18V22M22 12H18M6 12H2" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Lunch
+                    </h2>
+                    <div class="meal-cards-grid">
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Grilled Chicken Quinoa Bowl</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Grilled chicken</li>
+                                        <li>Quinoa</li>
+                                        <li>Mixed greens</li>
+                                        <li>Cherry tomatoes</li>
+                                        <li>Olive oil dressing</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">520 cal</span>
+                                        <span class="nutrition-item">P: 42g</span>
+                                        <span class="nutrition-item">C: 48g</span>
+                                        <span class="nutrition-item">F: 18g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Mediterranean Salmon Salad</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Grilled salmon</li>
+                                        <li>Mixed greens</li>
+                                        <li>Cucumber</li>
+                                        <li>Feta cheese</li>
+                                        <li>Olives</li>
+                                        <li>Lemon dressing</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">480 cal</span>
+                                        <span class="nutrition-item">P: 38g</span>
+                                        <span class="nutrition-item">C: 22g</span>
+                                        <span class="nutrition-item">F: 26g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dinner Section -->
+                <div class="meal-type-section">
+                    <h2 class="meal-type-title">
+                        <svg class="meal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="#22C55E" stroke-width="2"/>
+                            <path d="M12 2V6M12 18V22M22 12H18M6 12H2" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Dinner
+                    </h2>
+                    <div class="meal-cards-grid">
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Baked Salmon with Vegetables</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Salmon</li>
+                                        <li>Broccoli</li>
+                                        <li>Carrots</li>
+                                        <li>Sweet potato</li>
+                                        <li>Herbs & spices</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">550 cal</span>
+                                        <span class="nutrition-item">P: 45g</span>
+                                        <span class="nutrition-item">C: 42g</span>
+                                        <span class="nutrition-item">F: 20g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Lean Beef Stir-fry</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Lean beef</li>
+                                        <li>Mixed vegetables</li>
+                                        <li>Brown rice</li>
+                                        <li>Ginger</li>
+                                        <li>Soy sauce</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">520 cal</span>
+                                        <span class="nutrition-item">P: 40g</span>
+                                        <span class="nutrition-item">C: 50g</span>
+                                        <span class="nutrition-item">F: 16g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snacks Section -->
+                <div class="meal-type-section">
+                    <h2 class="meal-type-title">
+                        <svg class="meal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C12 2 6 5 6 8C6 9.657 7.343 11 9 11C10.296 11 11.516 10.684 12.536 10.182L12 16L13.536 10.182C14.556 10.684 15.776 11 17.072 11C18.729 11 20.072 9.657 20.072 8C20.072 5 14.072 2 12 2Z" fill="#22C55E"/>
+                        </svg>
+                        Snacks
+                    </h2>
+                    <div class="meal-cards-grid">
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Apple with Almond Butter</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Medium apple</li>
+                                        <li>Almond butter</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">260 cal</span>
+                                        <span class="nutrition-item">P: 6g</span>
+                                        <span class="nutrition-item">C: 32g</span>
+                                        <span class="nutrition-item">F: 14g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <h3 class="meal-card-title">Greek Yogurt with Honey</h3>
+                            <div class="meal-card-content">
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Ingredients</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Greek yogurt</li>
+                                        <li>Honey</li>
+                                        <li>Walnuts</li>
+                                    </ul>
+                                </div>
+                                <div class="meal-info-section">
+                                    <h4 class="info-label">Nutrition</h4>
+                                    <div class="nutrition-info">
+                                        <span class="nutrition-item">280 cal</span>
+                                        <span class="nutrition-item">P: 20g</span>
+                                        <span class="nutrition-item">C: 28g</span>
+                                        <span class="nutrition-item">F: 10g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Nutrition Summary -->
+        <div class="nutrition-summary">
+            <div class="container">
+                <h2 class="summary-title">Daily Nutrition Summary</h2>
+                <div class="summary-grid">
+                    <div class="summary-box">
+                        <div class="summary-value">2,200</div>
+                        <div class="summary-label">Total Calories</div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="summary-value">165g</div>
+                        <div class="summary-label">Protein</div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="summary-value">220g</div>
+                        <div class="summary-label">Carbs</div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="summary-value">65g</div>
+                        <div class="summary-label">Fats</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="diet-plan.js"></script>
+</body>
+</html>

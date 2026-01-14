@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect Dietician - NutriLife</title>
+    <link rel="stylesheet" href="dietician.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dietician-container">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="header-section">
+                <a href="dashboard.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Back to Dashboard</span>
+                </a>
+                <div class="header-content">
+                    <div class="title-section">
+                        <h1 class="page-title">Find Your Perfect Dietician</h1>
+                        <p class="page-subtitle">Browse our expert team and select the best match for your goals</p>
+                    </div>
+                    <button class="btn btn-confirm" id="confirmBtn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667 5L7.5 14.167L3.333 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Confirm Assignment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Currently Assigned Banner -->
+            <div class="assigned-banner" id="assignedBanner">
+                <svg class="check-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" fill="white"/>
+                    <path d="M22.667 10L13.333 19.333L9.333 15.333" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="banner-content">
+                    <h3 class="banner-title">Currently Assigned Dietician</h3>
+                    <p class="banner-text">Dr. Sarah Mitchell is your active dietician. You can change your assignment anytime.</p>
+                </div>
+            </div>
+
+            <!-- Dietician Cards Grid -->
+            <div class="dieticians-grid" id="dieticiansGrid">
+                <!-- Dr. Sarah Mitchell - Selected -->
+                <div class="dietician-card selected" data-id="sarah-mitchell" data-name="Dr. Sarah Mitchell">
+                    <div class="card-header">
+                        <div class="avatar-circle">DSM</div>
+                        <div class="card-status">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. Sarah Mitchell</h3>
+                        <p class="dietician-specialty">Weight Management & Sports Nutrition</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>4.9</span>
+                                <span class="reviews">342 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>156 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">CSSD</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">12 years</span>
+                        </div>
+                        <p class="description">Specialized in helping athletes and fitness enthusiasts optimize their performance through personalized nutrition strategies.</p>
+                    </div>
+                    <button class="btn btn-selected">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667 5L7.5 14.167L3.333 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Selected
+                    </button>
+                </div>
+
+                <!-- Dr. James Rodriguez -->
+                <div class="dietician-card" data-id="james-rodriguez" data-name="Dr. James Rodriguez">
+                    <div class="card-header">
+                        <div class="avatar-circle">DJR</div>
+                        <div class="card-status">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. James Rodriguez</h3>
+                        <p class="dietician-specialty">Diabetes & Heart Health</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>4.8</span>
+                                <span class="reviews">298 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>203 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">CDE</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">15 years</span>
+                        </div>
+                        <p class="description">Expert in managing chronic conditions through diet. Focuses on sustainable lifestyle changes for long-term health.</p>
+                    </div>
+                    <button class="btn btn-select">Select Dietician</button>
+                </div>
+
+                <!-- Dr. Emily Chen -->
+                <div class="dietician-card" data-id="emily-chen" data-name="Dr. Emily Chen">
+                    <div class="card-header">
+                        <div class="avatar-circle">DEC</div>
+                        <div class="card-status">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. Emily Chen</h3>
+                        <p class="dietician-specialty">Pediatric & Family Nutrition</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>4.9</span>
+                                <span class="reviews">276 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>189 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">CSP</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">9 years</span>
+                        </div>
+                        <p class="description">Passionate about creating healthy eating habits for families. Specialized in children's nutrition and picky eaters.</p>
+                    </div>
+                    <button class="btn btn-select">Select Dietician</button>
+                </div>
+
+                <!-- Dr. Michael Thompson -->
+                <div class="dietician-card" data-id="michael-thompson" data-name="Dr. Michael Thompson">
+                    <div class="card-header">
+                        <div class="avatar-circle">DMT</div>
+                        <div class="card-status">
+                            <span class="status-badge status-limited">Limited Slots</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. Michael Thompson</h3>
+                        <p class="dietician-specialty">Plant-Based & Vegan Nutrition</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>4.7</span>
+                                <span class="reviews">184 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>142 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">8 years</span>
+                        </div>
+                        <p class="description">Dedicated to helping clients thrive on plant-based diets. Expert in ensuring nutritional adequacy without animal products.</p>
+                    </div>
+                    <button class="btn btn-select">Select Dietician</button>
+                </div>
+
+                <!-- Dr. Rachel Kumar -->
+                <div class="dietician-card" data-id="rachel-kumar" data-name="Dr. Rachel Kumar">
+                    <div class="card-header">
+                        <div class="avatar-circle">DRK</div>
+                        <div class="card-status">
+                            <span class="status-badge status-waitlist">Waitlist</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. Rachel Kumar</h3>
+                        <p class="dietician-specialty">Eating Disorders & Mental Health</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>5.0</span>
+                                <span class="reviews">156 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>98 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">CEDRD</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">11 years</span>
+                        </div>
+                        <p class="description">Compassionate approach to healing relationships with food. Specializes in intuitive eating and body positivity.</p>
+                    </div>
+                    <button class="btn btn-select">Select Dietician</button>
+                </div>
+
+                <!-- Dr. David Park -->
+                <div class="dietician-card" data-id="david-park" data-name="Dr. David Park">
+                    <div class="card-header">
+                        <div class="avatar-circle">DDP</div>
+                        <div class="card-status">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="dietician-name">Dr. David Park</h3>
+                        <p class="dietician-specialty">Gut Health & Digestive Wellness</p>
+                        <div class="rating-section">
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                </svg>
+                                <span>4.8</span>
+                                <span class="reviews">215 reviews</span>
+                            </div>
+                            <div class="rating-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="6" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                    <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>167 clients</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <span class="cert-tag">RD</span>
+                            <span class="cert-tag">CNSC</span>
+                            <span class="cert-tag">LD</span>
+                        </div>
+                        <div class="experience">
+                            <span class="exp-label">Experience:</span>
+                            <span class="exp-value">10 years</span>
+                        </div>
+                        <p class="description">Expert in managing IBS, food sensitivities, and digestive issues through targeted nutrition interventions.</p>
+                    </div>
+                    <button class="btn btn-select">Select Dietician</button>
+                </div>
+            </div>
+
+            <!-- What happens after assignment? -->
+            <div class="assignment-flow">
+                <h2 class="flow-title">What happens after assignment?</h2>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Initial Consultation</h3>
+                        <p class="step-description">Your dietician will review your profile and schedule a video call.</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Custom Plan Creation</h3>
+                        <p class="step-description">Receive a personalized diet plan within 48 hours.</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Ongoing Support</h3>
+                        <p class="step-description">Regular check-ins and plan adjustments as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dietician.js"></script>
+</body>
+</html>

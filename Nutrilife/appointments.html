@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - NutriLife</title>
+    <link rel="stylesheet" href="appointments.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="appointments-container">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="header-section">
+                <a href="dashboard.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Back to Dashboard</span>
+                </a>
+                <div class="header-content">
+                    <div>
+                        <h1 class="page-title">Book an Appointment</h1>
+                        <p class="page-subtitle">Schedule a consultation with our expert dietitians</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <!-- Upcoming Appointments -->
+                    <div class="card">
+                        <div class="card-header">
+                            <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="4" width="18" height="18" rx="2" stroke="#22C55E" stroke-width="2"/>
+                                <path d="M3 8H21" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M7 2V6" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M17 2V6" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <h2 class="card-title">Upcoming Appointments</h2>
+                        </div>
+                        <div class="appointments-list">
+                            <div class="appointment-card">
+                                <div class="appointment-header">
+                                    <h3 class="dietitian-name">Dr. Sarah Mitchell</h3>
+                                    <span class="status-badge status-confirmed">confirmed</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <div class="detail-item">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="3" width="12" height="11" rx="1" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M2 6H14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M5 2V4" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M11 2V4" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>Nov 29, 2025</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="6" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M8 4V8L10 10" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>10:00 AM</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-join">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 10L10 7V13L15 10Z" fill="white"/>
+                                        <circle cx="10" cy="10" r="8" stroke="white" stroke-width="1.5"/>
+                                    </svg>
+                                    Join Consultation
+                                </button>
+                            </div>
+                            <div class="appointment-card">
+                                <div class="appointment-header">
+                                    <h3 class="dietitian-name">Dr. Michael Chen</h3>
+                                    <span class="status-badge status-pending">pending</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <div class="detail-item">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="3" width="12" height="11" rx="1" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M2 6H14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M5 2V4" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M11 2V4" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>Dec 2, 2025</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="6" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M8 4V8L10 10" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>02:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Filters -->
+                    <div class="card">
+                        <div class="card-header">
+                            <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6H21M6 12H18M9 18H15" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <h2 class="card-title">Quick Filters</h2>
+                        </div>
+                        <div class="filters-grid">
+                            <button class="filter-btn" data-filter="today">Available Today</button>
+                            <button class="filter-btn" data-filter="weekend">Weekend Slots</button>
+                            <button class="filter-btn" data-filter="video">Video Consultation</button>
+                            <button class="filter-btn" data-filter="budget">Budget Friendly</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <!-- Search Bar -->
+                    <div class="search-section">
+                        <div class="search-bar">
+                            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="6" stroke="#6B7280" stroke-width="1.5"/>
+                                <path d="M13 13L17 17" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search by name, specialty, or location...">
+                        </div>
+                        <button class="btn btn-search">Search</button>
+                    </div>
+
+                    <!-- Available Dietitians -->
+                    <div class="dietitians-section">
+                        <h2 class="section-title">Available Dietitians</h2>
+                        <div class="dietitians-list" id="dietitiansList">
+                            <!-- Dr. Sarah Mitchell -->
+                            <div class="dietitian-card" data-name="sarah mitchell" data-specialty="weight management sports nutrition" data-available="mon tue wed thu fri" data-price="50">
+                                <div class="dietitian-header">
+                                    <div class="dietitian-avatar">👩‍⚕️</div>
+                                    <div class="dietitian-info">
+                                        <h3 class="dietitian-name">Dr. Sarah Mitchell</h3>
+                                        <p class="dietitian-specialty">Weight Management & Sports Nutrition</p>
+                                    </div>
+                                    <div class="price-tag">$50 per session</div>
+                                </div>
+                                <div class="dietitian-details">
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                        </svg>
+                                        <span>4.9 (156 reviews)</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="5" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>12 years</span>
+                                    </div>
+                                </div>
+                                <div class="dietitian-tags">
+                                    <span class="tag tag-green">Registered Dietitian</span>
+                                    <span class="tag tag-green">Sports Nutritionist</span>
+                                </div>
+                                <div class="availability">
+                                    <span class="availability-label">Available:</span>
+                                    <div class="availability-days">
+                                        <span class="day-tag">Mon</span>
+                                        <span class="day-tag">Tue</span>
+                                        <span class="day-tag">Wed</span>
+                                        <span class="day-tag">Thu</span>
+                                        <span class="day-tag">Fri</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-slots">View Available Slots</button>
+                            </div>
+
+                            <!-- Dr. Michael Chen -->
+                            <div class="dietitian-card" data-name="michael chen" data-specialty="clinical nutrition diabetes care" data-available="mon wed fri sat" data-price="60">
+                                <div class="dietitian-header">
+                                    <div class="dietitian-avatar">👨‍⚕️</div>
+                                    <div class="dietitian-info">
+                                        <h3 class="dietitian-name">Dr. Michael Chen</h3>
+                                        <p class="dietitian-specialty">Clinical Nutrition & Diabetes Care</p>
+                                    </div>
+                                    <div class="price-tag">$60 per session</div>
+                                </div>
+                                <div class="dietitian-details">
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                        </svg>
+                                        <span>4.8 (203 reviews)</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="5" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>15 years</span>
+                                    </div>
+                                </div>
+                                <div class="dietitian-tags">
+                                    <span class="tag tag-green">Certified Diabetes Educator</span>
+                                    <span class="tag tag-green">Clinical Nutritionist</span>
+                                </div>
+                                <div class="availability">
+                                    <span class="availability-label">Available:</span>
+                                    <div class="availability-days">
+                                        <span class="day-tag">Mon</span>
+                                        <span class="day-tag">Wed</span>
+                                        <span class="day-tag">Fri</span>
+                                        <span class="day-tag">Sat</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-slots">View Available Slots</button>
+                            </div>
+
+                            <!-- Dr. Emily Rodriguez -->
+                            <div class="dietitian-card" data-name="emily rodriguez" data-specialty="plant-based nutrition wellness" data-available="tue thu fri sat" data-price="45">
+                                <div class="dietitian-header">
+                                    <div class="dietitian-avatar">👩‍⚕️</div>
+                                    <div class="dietitian-info">
+                                        <h3 class="dietitian-name">Dr. Emily Rodriguez</h3>
+                                        <p class="dietitian-specialty">Plant-Based Nutrition & Wellness</p>
+                                    </div>
+                                    <div class="price-tag">$45 per session</div>
+                                </div>
+                                <div class="dietitian-details">
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1L10 6L15 7L11 11L12 16L8 13L4 16L5 11L1 7L6 6L8 1Z" fill="#FBBF24"/>
+                                        </svg>
+                                        <span>4.9 (189 reviews)</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="5" r="2" stroke="#6B7280" stroke-width="1.5"/>
+                                            <path d="M3 14C3 11 5 9 8 9C11 9 13 11 13 14" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        <span>10 years</span>
+                                    </div>
+                                </div>
+                                <div class="dietitian-tags">
+                                    <span class="tag tag-green">Holistic Nutritionist</span>
+                                    <span class="tag tag-green">Wellness Coach</span>
+                                </div>
+                                <div class="availability">
+                                    <span class="availability-label">Available:</span>
+                                    <div class="availability-days">
+                                        <span class="day-tag">Tue</span>
+                                        <span class="day-tag">Thu</span>
+                                        <span class="day-tag">Fri</span>
+                                        <span class="day-tag">Sat</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-slots">View Available Slots</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="appointments.js"></script>
+</body>
+</html>
