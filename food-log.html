@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Log - NutriLife</title>
+    <link rel="stylesheet" href="food-log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Back Navigation -->
+        <div class="back-nav">
+            <a href="dashboard.html" class="back-link">
+                <svg class="back-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="#1F2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Back to Dashboard</span>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Calorie Intake Card -->
+            <div class="calorie-card">
+                <div class="calorie-header">
+                    <div>
+                        <h2 class="calorie-title">Today's Calorie Intake</h2>
+                        <p class="calorie-subtitle">Track your daily nutrition</p>
+                    </div>
+                    <button class="fire-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C12 2 6 8 6 12C6 15.314 8.686 18 12 18C15.314 18 18 15.314 18 12C18 8 12 2 12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="white" opacity="0.3"/>
+                            <path d="M12 6C12 6 9 9 9 11C9 12.657 10.343 14 12 14C13.657 14 15 12.657 15 11C15 9 12 6 12 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="calorie-stats">
+                    <div class="stat-item">
+                        <p class="stat-label">Consumed</p>
+                        <p class="stat-value" id="consumed">1070</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Target</p>
+                        <p class="stat-value" id="target">2200</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Remaining</p>
+                        <p class="stat-value" id="remaining">1130</p>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">48.6% of daily target</p>
+                </div>
+            </div>
+
+            <!-- Food Log Section -->
+            <div class="food-log-section">
+                <div class="food-log-header">
+                    <div class="header-left">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 6H17" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M3 10H17" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M3 14H17" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="3" cy="6" r="1.5" fill="#4B5563"/>
+                            <circle cx="3" cy="10" r="1.5" fill="#4B5563"/>
+                            <circle cx="3" cy="14" r="1.5" fill="#4B5563"/>
+                        </svg>
+                        <h3 class="food-log-title">Today's Food Log</h3>
+                    </div>
+                    <a href="#" class="view-report">View Report</a>
+                </div>
+
+                <!-- Food Entries -->
+                <div class="food-entries" id="foodEntries">
+                    <!-- Food entries will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <button class="add-food-btn" id="addFoodBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 4V16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 10H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Add Food
+            </button>
+
+            <div class="search-section">
+                <h4 class="sidebar-title">Search Foods</h4>
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="9" r="6" stroke="#9CA3AF" stroke-width="2"/>
+                        <path d="M13 13L17 17" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                </div>
+            </div>
+
+            <div class="common-foods-section">
+                <h4 class="sidebar-title">Common Foods</h4>
+                <div class="common-foods-list" id="commonFoodsList">
+                    <!-- Common foods will be dynamically added here -->
+                </div>
+                <button class="add-custom-btn" id="addCustomBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 4V16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 10H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Add Custom Food
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="food-log.js"></script>
+</body>
+</html>
